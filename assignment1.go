@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+
+	"example.com/user/assignment1/morestrings"
 )
 
 var (
@@ -14,5 +16,7 @@ func main() {
 	a = "the "
 	b = "answer is "
 	c = "42 "
-	fmt.Println(a + b + c)
+	var d string
+	d = morestrings.ReturnConcatBob(a + b + c)
+	fmt.Println(d)
 }
